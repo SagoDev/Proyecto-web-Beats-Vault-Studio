@@ -1,0 +1,39 @@
+header {
+    background-image: url(/img/image1.png);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;     
+}
+
+.beats, .vault{
+    font-size: 4rem;
+    font-family: 'Blanka'
+}
+
+.navContainer{
+    height: 10vh; 
+}
+
+.titleContainer{
+    height: 90vh;
+}
+
+.line{
+    height: 5px;
+    background-color: rgb(210, 101, 9);
+}
+
+.spanStudio{
+    background-color: rgb(210, 101, 9);
+}
+.studio{
+    font-size: 3rem;
+    letter-spacing: 20PX;
+    font-family: 'Barlow';
+}
+
+.slogan{
+    font-size: 2rem;
+    font-family: 'Barlow';
+}

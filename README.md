@@ -21,7 +21,7 @@
 ## Vista previa del proyecto
 Si quieres hechas un vistazo al proyecto, te recomiendo:
 
-![Captura del proyecto](https://github.com/SagoDev/Proyecto-web-Beats-Vault-Studio/tree/main/img/screenshots/shot-1)
+![Captura del proyecto](https://github.com/SagoDev/Proyecto-web-Beats-Vault-Studio/blob/main/img/screenshots/shot%201.png?raw=true)
 ![Captura del proyecto]()
 ![Captura del proyecto]()
 

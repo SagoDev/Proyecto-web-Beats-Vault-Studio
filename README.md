@@ -1,5 +1,5 @@
 # Beats Vault Studio
-![Imagen del proyecto]()
+![Imagen del proyecto](https://github.com/SagoDev/Proyecto-web-Beats-Vault-Studio/blob/main/img/Banner/Portada%20Proyecto%20Beats%20Vault%20Studio.png?raw=true)
 
 ## Ejemplo en vivo
 - [URL-de-github-pages-de-este-proyecto]()
@@ -22,7 +22,7 @@ Proximamente daré feedback..
 ## Vista previa del proyecto
 Si quieres hechas un vistazo al proyecto, te recomiendo:
 
-![Captura del proyecto]()
+![Captura del proyecto](https://github.com/SagoDev/Proyecto-web-Beats-Vault-Studio/blob/main/img/screenshots/shot%201.png?raw=true)
 ![Captura del proyecto]()
 ![Captura del proyecto]()
 

@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.cdnfonts.com/css/blanka" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/barlow" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/league-spartan" rel="stylesheet">
     <title>Proyecto web Beats Vault Studio</title>
 </head>
-<body>
-    <header class="vh-100">
+<body class="c-darkblue">
+    <header class="vh-100" id="home">
       <!-- NavBar -->
-      <nav class="navContainer navbar navbar-expand-md navbar-dark bg-transparent">
+      <nav class="navContainer navbar navbar-expand-md navbar-dark c-darkblue fixed-top">
         <div class="container">
           <!--Logo-->
-          <a class="navbar-brand fs-4" href="#">Beats Vault Studio</a>
+          <a class="navbar-brand fs-4" href="index.html"><img class="logo" src="/img/Logo/BeatsVaultLogo.png" alt=""></a>
           <!--Toggle Btn-->
           <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,19 +30,19 @@
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <!--Body Menu Lateral-->
-            <div class="offcanvas-body">
+            <div class="f-barlow fcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  <a class="nav-link active" aria-current="page" href="#home">INICIO</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Beats</a>
+                  <a class="nav-link" href="#beats">BEATS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Licencias</a>
+                  <a class="nav-link" href="#licenses">LICENCIAS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contacto</a>
+                  <a class="nav-link" href="#contact">CONTACTO</a>
                 </li>                
               </ul>              
             </div>
@@ -49,33 +51,68 @@
       </nav>
       <!--Main Title-->    
       <div class="titleContainer container d-flex justify-content-center align-items-center">
-        <div class="title">
+        <div class="title mt-5">
           <div class=" topLine row">
             <div class=" emptyLine col-1"></div>
-            <div class="line leftLine col-4"></div>
+            <div class="line c-orange leftLine col-4"></div>
             <div class=" emptyLine col-2"></div>
-            <div class="line rightLine col-4"></div>
+            <div class="line c-orange rightLine col-4"></div>
             <div class=" emptyLine col-1"></div>
           </div>
-          <div class="mainTitle row d-flex text-center justify-content-center">
-            <div class="beats text-white col-lg-12">BEATS</div>
-            <div class="vault text-white col-lg-12">VAULT</div>
-            <div class="studio col-lg-12"><span class="spanStudio">STUDIO</span></div> 
-          <div class="slogan text-white col-lg-12">ELEVA TU MUSICA</div>
+          <div class="mainTitle row d-flex text-center justify-content-center mt-3">
+            <div class="nameTitle row f-blanka text-white"> 
+              <span class="col-sm-4 col-md-6 col-lg-12 d-flex justify-content-sm-center justify-content-md-end justify-content-lg-center">BEATS</span> 
+              <span class=" col-sm-12 col-md-6 col-lg-12 d-flex justify-content-sm-center justify-content-md-start justify-content-lg-center">VAULT</span>
+            </div>
+            <div class="studio container c-orange d-flex justify-content-center f-barlow col-sm-4"><span class="d-flex justify-content-center">STUDIO</span></div> 
+          <div class="slogan f-barlow text-white mb-3 col-lg-12">ELEVA TU MUSICA</div>
           </div>
           <div class="bottomLine row">
           <div class=" emptyLine col-1"></div>
-          <div class="line centerLine col-10"></div>
+          <div class="line c-orange centerLine col-10"></div>
           <div class=" emptyLine col-1"></div>
           </div>  
         </div>
       </div>
-        
-        
+      <span id="beats"></span>    
     </header>
     <main>
-        <div class="container vh-100">                      
-        </div>       
+      <div class="mainContent mt-5 mx-5">             
+        <div class="row mt-5 d-flex justify-content-center">
+          <div class="textContainer text-white row col-sm-12 col-lg-7">
+            <div class="hashtagText text-orange f-barlow col-sm-12">
+              #MADEBYBVS
+            </div>
+            <div class="mainPhrase row col-sm-12">
+              <div class="textParaph1 col-12">
+                <span class="fs-sm-3 f-spartan mb-3">
+                  TENEMOS EL BEAT
+                </span>  
+                <span class="col-12 fs-sm-3 f-blanka">
+                  QUE TANTO BUSCAS
+                </span> 
+              </div>              
+              <div class="textParaph2 col-12 fs-sm-3 f-barlow text-orange fw-bold">
+                HAGAMOS HISTORIA JUNTOS.
+              </div>                          
+            </div>
+            <div class="col-sm-12 col-lg-8 mt-3 d-sm-flex d-lg-block justify-content-sm-center mt-5">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar género" aria-label="Search">
+                <button class="btn c-orange text-darkblue fw-bold f-barlow" type="submit">BUSCAR</button>
+              </form>
+            </div>
+          </div>
+          <div class="carouselsContainer row col-sm-12 col-lg-5">
+            <div class="carouselRap col-4"></div>
+            <div class="carouselReggaeton col-4"></div>
+            <div class="carouselRock col-4"></div>
+            <div class="seeAll col-12 f-barlow d-flex justify-content-end align-items-end">
+              <a class="link-underline link-underline-opacity-0 text-orange" href="">VER MAS</a>
+            </div>   
+          </div>          
+        </div>
+      </div>         
     </main>
     <footer>        
     </footer>

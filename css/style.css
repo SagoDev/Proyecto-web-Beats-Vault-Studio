@@ -6,11 +6,6 @@ header {
     background-size: cover;     
 }
 
-.beats, .vault{
-    font-size: 4rem;
-    font-family: 'Blanka'
-}
-
 .navContainer{
     height: 10vh; 
 }
@@ -19,21 +14,72 @@ header {
     height: 90vh;
 }
 
-.line{
-    height: 5px;
-    background-color: rgb(210, 101, 9);
+.logo {
+    height: 50px;
 }
 
-.spanStudio{
-    background-color: rgb(210, 101, 9);
+.mainContent{
+   height: 200vh;
 }
+
+.line{
+    height: 5px;
+}
+
 .studio{
     font-size: 3rem;
     letter-spacing: 20PX;
-    font-family: 'Barlow';
 }
 
-.slogan{
+.nameTitle, .textParaph1{
+    font-size: 4rem;
+}
+
+.slogan {
     font-size: 2rem;
-    font-family: 'Barlow';
+}
+
+.textParaph2{
+    font-size: 2rem;
+}
+
+.navbarBeats, .hashtagText{
+    font-size: 1.5rem;
+}
+
+.seeAll{
+    font-size: 2rem;
+}
+
+
+
+.f-barlow {
+    font-family: 'Barlow'
+}
+.f-blanka {
+    font-family: 'Blanka'
+}
+
+.f-montserrat{
+    font-family: 'Montserrat'
+}
+
+.f-spartan{
+    font-family: 'League Spartan'
+}
+
+.c-darkblue{
+    background-color: rgb(20, 15, 42); 
+}
+
+.c-orange{
+    background-color: rgb(210, 101, 9);
+}
+
+.text-darkblue{
+    color: rgb(20, 15, 42); 
+}
+
+.text-orange{
+    color: rgb(210, 101, 9);
 }

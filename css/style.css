@@ -78,10 +78,8 @@ section{
 }
 
 .mdSec div img:hover{
-    width: 300px;
     opacity: 1;
     transform: scale(1.2);
-    filter: contrast(120%);
 }
 /*Gallery View md end*/
 

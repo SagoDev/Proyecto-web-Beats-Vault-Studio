@@ -23,8 +23,8 @@ Proximamente daré feedback..
 Si quieres hechas un vistazo al proyecto, te recomiendo:
 
 ![Captura del proyecto](https://github.com/SagoDev/Proyecto-web-Beats-Vault-Studio/blob/main/img/screenshots/shot%201.png?raw=true)
-![Captura del proyecto]()
-![Captura del proyecto]()
+![Captura del proyecto](https://github.com/SagoDev/Proyecto-web-Beats-Vault-Studio/blob/main/img/screenshots/shot%202.png?raw=true)
+![Captura del proyecto](https://github.com/SagoDev/Proyecto-web-Beats-Vault-Studio/blob/main/img/screenshots/shot%203.png?raw=true)
 
 ## Autor ✒️
 **Santiago Lanz**

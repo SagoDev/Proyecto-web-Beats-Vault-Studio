@@ -25,34 +25,83 @@
           <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!--Menu lateral-->
-          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <!--Header Menu Lateral-->
-            <div class="offcanvas-header text-white border-bottom">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ir</h5>
+          <!--Sidebar-->
+          <div class="sidebar offcanvas text-white offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!--Sidebar Header-->
+            <div class="offcanvas-header border-bottom text-white c-darkblue">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Opciones</h5>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <!--Body Menu Lateral-->
-            <div class="f-barlow fcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <!--Sidebar Body-->
+            <div class="offcanvas-body text-center c-darkblue">
+              <ul class="navbar-nav h-100 d-flex justify-content-center align-items-center flex-grow-1 f-barlow p-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#home">INICIO</a>
+                  <a class="nav-link text-white" aria-current="page" href="#home">
+                    INICIO
+                  </a>
                 </li>
+                <!--BeatsDropdown-->
+                <li class="nav-item">                  
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle border-0 text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      BEATS
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark c-darkblue">
+                      <li><a class="dropdown-item text-white" href="#beats">Nuestros Beats</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Licencias</a></li>
+                    </ul>
+                  </div>
+                </li> 
+                <!--Services Dropdown-->
                 <li class="nav-item">
-                  <a class="nav-link" href="#beats">BEATS</a>
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle border-0 text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      SERVICIOS
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark c-darkblue">
+                      <li><a class="dropdown-item text-white" href="#">Mezcla Y Mastering</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Tienda De Recursos</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Consultas Online</a></li>
+                    </ul>
+                  </div>
                 </li>
+                <!--Contact Dropdown--> 
                 <li class="nav-item">
-                  <a class="nav-link" href="#licenses">LICENCIAS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">CONTACTO</a>
-                </li>                
-              </ul>              
-            </div>
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle border-0 text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      CONTACTO
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark c-darkblue text-white">
+                      <li><a class="dropdown-item text-white" href="#">Beats Vault Studio</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Preguntas Frecuentes</a></li>
+                    </ul>
+                  </div>
+                </li>       
+              </ul> 
+              <!--Login/Sign Up-->
+              <div class="d-flex justify-content-center align-items-center gap-3">
+                <a class="text-orange f-barlow" href="#login">Iniciar Sesión</a>                
+                <!--Modal Btn Sign Up-->             
+                <button type="button" class="btn  f-barlow px-3 py-1 c-orange rounded-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Registrame</button> 
+              </div>
+            </div>            
           </div>
         </div>
       </nav>
-      <!--Main Title-->    
+      <!--Modal Section-->
+        <!--Modal Sign Up-->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-white c-darkblue">
+                <div class="modal-header">
+                   
+                </div>
+                <div class="modal-body" id="modal">                    
+                </div>                       
+            </div>
+        </div>
+    </div>
+      <!--Main Title-->          
       <div class="titleContainer container d-flex justify-content-center align-items-center">
         <div class="mt-5">
           <div class=" topLine row">
@@ -87,7 +136,7 @@
       <div class="mainContent mt-5 mx-5">
         <!--Beats Section-->             
         <div class="row mt-5 d-flex justify-content-center">
-          <!--Text Section-->
+          <!--Text Container-->
           <div class="textContainer text-white row col-sm-12 col-lg-6 mb-5">
             <!--Hashtag-->
             <div class="hashtagText text-orange f-barlow col-sm-12">
@@ -115,7 +164,7 @@
               </form>
             </div>
           </div>
-          <!--Gallery Section-->
+          <!--Gallery Contaoiner-->
           <div class="galleryContainer col-sm-12 col-lg-6">
             <!--View in small size-->
             <section class="smSec d-md-none flex-nowrap overflow-scroll">

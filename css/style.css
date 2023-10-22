@@ -6,6 +6,7 @@ header {
     background-size: cover;     
 }
 
+/*Setting View and Font sizes*/
 .navContainer{
     height: 10vh; 
 }
@@ -19,7 +20,7 @@ header {
 }
 
 .mainContent{
-   height: 200vh;
+   height: 100vh;
 }
 
 .line{
@@ -106,6 +107,7 @@ section{
 }
 /*Gallery View lg end*/
 
+/*Customized classes for fonts, backgrounds and colors*/
 .f-barlow {
     font-family: 'Barlow'
 }

@@ -27,31 +27,86 @@ header {
 }
 
 .studio{
-    font-size: 3rem;
-    letter-spacing: 20PX;
+    letter-spacing: 10px;
+    max-width: 50vw;
+    
 }
 
-.nameTitle, .textParaph1{
+.titlePart1{
     font-size: 4rem;
-}
-
-.slogan {
-    font-size: 2rem;
-}
-
-.textParaph2{
-    font-size: 2rem;
 }
 
 .navbarBeats, .hashtagText{
     font-size: 1.5rem;
 }
 
-.seeAll{
-    font-size: 2rem;
+section{
+    display: none;
 }
 
 
+/*Gallery View md start*/
+.smSec{
+    display: flex;
+}
+
+.smGenre{
+    flex: 1 0 auto;
+    margin: 0 10px;
+   
+}
+.smGenre img{
+    image-resolution: auto;
+    width: 70vw;
+    height: 50vh;
+}
+/*Gallery View md end*/
+
+/*Gallery View md start*/
+.mdGenre{
+    width: 20vw;
+    height: 200px;
+}
+
+.mdSec div img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    padding: 10px;
+}
+
+.mdSec div img:hover{
+    width: 300px;
+    opacity: 1;
+    transform: scale(1.2);
+    filter: contrast(120%);
+}
+/*Gallery View md end*/
+
+/*Gallery View lg start*/
+.lgGenre{
+    display: none;    
+    width: 600px;
+    height: 430px;
+}
+
+.lgSec div img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    padding: 10px;
+}
+
+.lgSec div img:hover{
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+/*Gallery View lg end*/
 
 .f-barlow {
     font-family: 'Barlow'
@@ -83,3 +138,6 @@ header {
 .text-orange{
     color: rgb(210, 101, 9);
 }
+
+
+

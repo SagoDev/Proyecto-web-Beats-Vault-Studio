@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+    <!--Fonts Links-->
     <link href="https://fonts.cdnfonts.com/css/blanka" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/barlow" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/league-spartan" rel="stylesheet">
+    <!--Personal link-->
+    <link rel="stylesheet" href="css/style.css">
     <title>Proyecto web Beats Vault Studio</title>
 </head>
 <body class="c-darkblue">
@@ -51,7 +54,7 @@
       </nav>
       <!--Main Title-->    
       <div class="titleContainer container d-flex justify-content-center align-items-center">
-        <div class="title mt-5">
+        <div class="mt-5">
           <div class=" topLine row">
             <div class=" emptyLine col-1"></div>
             <div class="line c-orange leftLine col-4"></div>
@@ -60,12 +63,15 @@
             <div class=" emptyLine col-1"></div>
           </div>
           <div class="mainTitle row d-flex text-center justify-content-center mt-3">
-            <div class="nameTitle row f-blanka text-white"> 
-              <span class="col-sm-4 col-md-6 col-lg-12 d-flex justify-content-sm-center justify-content-md-end justify-content-lg-center">BEATS</span> 
-              <span class=" col-sm-12 col-md-6 col-lg-12 d-flex justify-content-sm-center justify-content-md-start justify-content-lg-center">VAULT</span>
+            <div class="titlePart1 d-flex justify-content-center f-blanka text-white"> 
+              BEATS VAULT
             </div>
-            <div class="studio container c-orange d-flex justify-content-center f-barlow col-sm-4"><span class="d-flex justify-content-center">STUDIO</span></div> 
-          <div class="slogan f-barlow text-white mb-3 col-lg-12">ELEVA TU MUSICA</div>
+            <div class="studio fs-2 d-flex justify-content-center c-orange f-barlow">
+             <div>STUDIO</div> 
+            </div> 
+            <div class="slogan fs-2 f-barlow text-white mb-3">
+             ELEVA TU MUSICA
+            </div>
           </div>
           <div class="bottomLine row">
           <div class=" emptyLine col-1"></div>
@@ -74,28 +80,34 @@
           </div>  
         </div>
       </div>
+      <!--Mark for beats section on navBar-->
       <span id="beats"></span>    
     </header>
     <main>
-      <div class="mainContent mt-5 mx-5">             
+      <div class="mainContent mt-5 mx-5">
+        <!--Beats Section-->             
         <div class="row mt-5 d-flex justify-content-center">
-          <div class="textContainer text-white row col-sm-12 col-lg-7">
+          <!--Text Section-->
+          <div class="textContainer text-white row col-sm-12 col-lg-6 mb-5">
+            <!--Hashtag-->
             <div class="hashtagText text-orange f-barlow col-sm-12">
               #MADEBYBVS
             </div>
-            <div class="mainPhrase row col-sm-12">
-              <div class="textParaph1 col-12">
-                <span class="fs-sm-3 f-spartan mb-3">
+            <!--Phrase-->
+            <div class="mainPhrase row w-100 col-sm-12">
+              <div class="phrasePart1 fs-1">
+                <span class="f-spartan mb-3">
                   TENEMOS LO QUE
                 </span>  
-                <span class="col-12 fs-sm-3 f-blanka">
+                <span class="phrasePart2 fs-1 col-6 f-blanka">
                   ESTAS BUSCANDO
                 </span> 
               </div>              
-              <div class="textParaph2 col-12 fs-sm-3 f-barlow text-orange fw-bold">
+              <div class="phrasePart3 col-12 f-barlow text-orange fw-bold">
                 HAGAMOS HISTORIA JUNTOS.
               </div>                          
             </div>
+            <!--Search Input-->
             <div class="col-sm-12 col-lg-8 mt-3 d-sm-flex d-lg-block justify-content-sm-center mt-5">
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Buscar género" aria-label="Search">
@@ -103,19 +115,70 @@
               </form>
             </div>
           </div>
-          <div class="carouselsContainer row col-sm-12 col-lg-5">
-            <div class="carouselRap col-4"></div>
-            <div class="carouselReggaeton col-4"></div>
-            <div class="carouselRock col-4"></div>
-            <div class="seeAll col-12 f-barlow d-flex justify-content-end align-items-end">
-              <a class="link-underline link-underline-opacity-0 text-orange" href="">VER MAS</a>
-            </div>   
-          </div>          
+          <!--Gallery Section-->
+          <div class="carouselsContainer col-sm-12 col-lg-6">
+            <!--View in small size-->
+            <section class="smSec d-md-none flex-nowrap overflow-scroll">
+              <div class="smGenre d-md-flex">
+                <img src="https://images.pexels.com/photos/16741044/pexels-photo-16741044/free-photo-of-moda-gente-mujer-arte.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="reggaeton" class="img-fluid">
+              </div>
+              <div  class="smGenre d-md-flex">
+                <img src="https://images.pexels.com/photos/2067689/pexels-photo-2067689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="rap">
+              </div>              
+              <div  class="smGenre d-md-flex">
+                <img src="https://images.pexels.com/photos/16844558/pexels-photo-16844558/free-photo-of-musica-musico-concierto-instrumento-musical.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="rock">
+              </div>
+              <div  class="smGenre d-md-flex">
+                <img src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="pop">
+              </div>
+              <div  class="smGenre d-md-flex">
+                <img src="https://images.pexels.com/photos/13872120/pexels-photo-13872120.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="electronic" class="card-img img-fluid">
+              </div> 
+            </section>
+            <!--View in medium size-->
+            <section class="mdSec d-md-flex d-lg-none">
+              <div class="mdGenre d-md-flex">
+                <img src="https://images.pexels.com/photos/16741044/pexels-photo-16741044/free-photo-of-moda-gente-mujer-arte.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="reggaeton">
+              </div>
+              <div  class="mdGenre d-md-flex">
+                <img src="https://images.pexels.com/photos/2067689/pexels-photo-2067689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="rap">
+              </div>              
+              <div  class="mdGenre d-md-flex">
+                <img src="https://images.pexels.com/photos/16844558/pexels-photo-16844558/free-photo-of-musica-musico-concierto-instrumento-musical.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="rock">
+              </div>
+              <div  class="mdGenre d-md-flex">
+                <img src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="pop">
+              </div>
+              <div  class="mdGenre d-md-flex">
+                <img src="https://images.pexels.com/photos/13872120/pexels-photo-13872120.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="electronic" class="card-img img-fluid">
+              </div>              
+            </section>
+            <!--View in large size-->
+            <section class="lgSec d-lg-flex">
+              <div class="lgGenre d-lg-flex">
+                <img src="https://images.pexels.com/photos/16741044/pexels-photo-16741044/free-photo-of-moda-gente-mujer-arte.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="reggaeton">
+              </div>
+              <div  class="lgGenre d-lg-flex">
+                <img src="https://images.pexels.com/photos/2067689/pexels-photo-2067689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="rap">
+              </div>              
+              <div  class="lgGenre d-lg-flex">
+                <img src="https://images.pexels.com/photos/16844558/pexels-photo-16844558/free-photo-of-musica-musico-concierto-instrumento-musical.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="rock">
+              </div>
+              <div  class="lgGenre d-lg-flex">
+                <img src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="pop">
+              </div>
+              <div  class="lgGenre d-lg-flex">
+                <img src="https://images.pexels.com/photos/13872120/pexels-photo-13872120.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="electronic" class="card-img">
+              </div>              
+            </section>                                               
+          </div>
         </div>
       </div>         
     </main>
     <footer>        
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
+    <!--Personal Script-->
 </body>
 </html>

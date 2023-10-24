@@ -6,6 +6,7 @@ header {
     background-size: cover;     
 }
 
+
 /*Setting View and Font sizes*/
 .navContainer{
     height: 10vh; 
@@ -106,6 +107,18 @@ section{
     filter: contrast(120%);
 }
 /*Gallery View lg end*/
+
+/*Style Sign In and Sign Up Modals*/
+
+
+.right-box{
+    padding: 40px 30px 40px 40px;    
+}
+
+::placeholder{
+    font-size: 16px;
+}
+
 
 /*Customized classes for fonts, backgrounds and colors*/
 .f-barlow {

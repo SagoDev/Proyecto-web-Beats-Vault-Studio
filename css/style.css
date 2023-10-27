@@ -6,7 +6,6 @@ header {
     background-size: cover;     
 }
 
-
 /*Setting View and Font sizes*/
 .navContainer{
     height: 10vh; 
@@ -43,6 +42,22 @@ section{
 }
 
 
+/*Process Section*/
+
+.bi{
+    font-size: 60px;
+    text-align: center;
+    width: 100px !important;
+    height: 100px !important;
+    margin: auto;
+    top: 45px;
+    border-radius: 50%;
+    background-color: rgb(210, 101, 9);    
+}
+.card{
+ background-color: rgb(20, 15, 42);
+ padding: 20px;
+}
 /*Gallery View md start*/
 .smSec{
     display: flex;
@@ -103,10 +118,6 @@ section{
     filter: contrast(120%);
 }
 /*Gallery View lg end*/
-
-.card-text{
-    text-align: justify;
-}
 
 /*Style Sign In and Sign Up Modals*/
 .right-box{

@@ -3,12 +3,12 @@ header {
     background-blend-mode: multiply;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;     
+    background-size: cover;
 }
 
 /*Setting View and Font sizes*/
-.navContainer{
-    height: 10vh; 
+.navContainer {
+    height: 10vh;
 }
 
 .titleContainer{
@@ -19,32 +19,33 @@ header {
     height: 50px;
 }
 
-.line{
+.line {
     height: 5px;
 }
 
-.studio{
+.studio {
     letter-spacing: 10px;
     max-width: 50vw;
-    
+
 }
 
-.titlePart1{
+.titlePart1 {
     font-size: 4rem;
 }
 
-.navbarBeats, .hashtagText{
+.navbarBeats,
+.hashtagText {
     font-size: 1.5rem;
 }
 
-section{
+section {
     display: none;
 }
 
 
 /*Process Section*/
 
-.bi{
+.bi {
     font-size: 60px;
     text-align: center;
     width: 100px !important;
@@ -52,36 +53,40 @@ section{
     margin: auto;
     top: 45px;
     border-radius: 50%;
-    background-color: rgb(210, 101, 9);    
+    background-color: rgb(210, 101, 9);
 }
-.card{
- background-color: rgb(20, 15, 42);
- padding: 20px;
+
+.card {
+    background-color: rgb(20, 15, 42);
+    padding: 20px;
 }
+
 /*Gallery View md start*/
-.smSec{
+.smSec {
     display: flex;
 }
 
-.smGenre{
+.smGenre {
     flex: 1 0 auto;
     margin: 0 10px;
-   
+
 }
-.smGenre img{
+
+.smGenre img {
     image-resolution: auto;
     width: 70vw;
     height: 50vh;
 }
+
 /*Gallery View md end*/
 
 /*Gallery View md start*/
-.mdGenre{
+.mdGenre {
     width: 20vw;
     height: 200px;
 }
 
-.mdSec div img{
+.mdSec div img {
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
@@ -90,20 +95,21 @@ section{
     padding: 10px;
 }
 
-.mdSec div img:hover{
+.mdSec div img:hover {
     opacity: 1;
     transform: scale(1.2);
 }
+
 /*Gallery View md end*/
 
 /*Gallery View lg start*/
-.lgGenre{
-    display: none;    
+.lgGenre {
+    display: none;
     width: 600px;
     height: 430px;
 }
 
-.lgSec div img{
+.lgSec div img {
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
@@ -112,19 +118,20 @@ section{
     padding: 10px;
 }
 
-.lgSec div img:hover{
+.lgSec div img:hover {
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
 }
+
 /*Gallery View lg end*/
 
 /*Style Sign In and Sign Up Modals*/
-.right-box{
-    padding: 40px 30px 40px 40px;    
+.right-box {
+    padding: 40px 30px 40px 40px;
 }
 
-::placeholder{
+::placeholder {
     font-size: 16px;
 }
 
@@ -133,33 +140,31 @@ section{
 .f-barlow {
     font-family: 'Barlow'
 }
+
 .f-blanka {
     font-family: 'Blanka'
 }
 
-.f-montserrat{
+.f-montserrat {
     font-family: 'Montserrat'
 }
 
-.f-spartan{
+.f-spartan {
     font-family: 'League Spartan'
 }
 
-.c-darkblue{
-    background-color: rgb(20, 15, 42); 
+.c-darkblue {
+    background-color: rgb(20, 15, 42);
 }
 
-.c-orange{
+.c-orange {
     background-color: rgb(210, 101, 9);
 }
 
-.text-darkblue{
-    color: rgb(20, 15, 42); 
+.text-darkblue {
+    color: rgb(20, 15, 42);
 }
 
-.text-orange{
+.text-orange {
     color: rgb(210, 101, 9);
 }
-
-
-

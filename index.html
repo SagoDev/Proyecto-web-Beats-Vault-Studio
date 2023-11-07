@@ -1,232 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">    
-    <!--Fonts Links-->
-    <link href="https://fonts.cdnfonts.com/css/blanka" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/barlow" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/league-spartan" rel="stylesheet">
-    <!--Personal link-->
-    <link rel="stylesheet" href="css/style.css">
-    <title>Proyecto web Beats Vault Studio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!--Fonts Links-->
+  <link href="https://fonts.cdnfonts.com/css/blanka" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/barlow" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/league-spartan" rel="stylesheet">
+  <!--Personal link-->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Proyecto web Beats Vault Studio</title>
 </head>
+
 <body class="c-darkblue">
-    <header class="vh-100 rounded-5 m-3" id="home">
-      <!-- NavBar -->
-      <nav class="navContainer navbar navbar-expand-lg navbar-dark c-darkblue fixed-top">
-        <div class="container">
-          <!--Logo-->
-          <a class="navbar-brand fs-4" href="index.html"><img class="logo" src="https://github.com/SagoDev/Proyecto-web-Beats-Vault-Studio/blob/main/img/Logo/BeatsVaultLogo.png?raw=true" alt=""></a>
-          <!--Toggle Btn-->
-          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!--Sidebar-->
-          <div class="sidebar offcanvas text-white offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <!--Sidebar Header-->
-            <div class="offcanvas-header border-bottom text-white c-darkblue">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Opciones</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <!--Sidebar Body-->
-            <div class="offcanvas-body text-center c-darkblue">
-              <ul class="navbar-nav d-flex justify-content-center align-items-center flex-grow-1 f-barlow">
-                <li class="nav-item">
-                  <a class="nav-link text-white" aria-current="page" href="#home">
-                    INICIO
-                  </a>
-                </li>
-                <!--BeatsDropdown-->
-                <li class="nav-item">                  
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle border-0 text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      BEATS
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-dark c-darkblue">
-                      <li><a class="dropdown-item text-white" href="#beats">Nuestros Beats</a></li>
-                      <li><a class="dropdown-item text-white" href="#">Licencias</a></li>
-                    </ul>
-                  </div>
-                </li> 
-                <!--Services Dropdown-->
-                <li class="nav-item">
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle border-0 text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      SERVICIOS
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-dark c-darkblue">
-                      <li><a class="dropdown-item text-white" href="#mix&mas">Mezcla Y Mastering</a></li>
-                      <li><a class="dropdown-item text-white" href="#">Tienda De Recursos</a></li>
-                      <li><a class="dropdown-item text-white" href="#">Consultas Online</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <!--Contact Dropdown--> 
-                <li class="nav-item">
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle border-0 text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      CONTACTO
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-dark c-darkblue text-white">
-                      <li><a class="dropdown-item text-white" href="#">Beats Vault Studio</a></li>
-                      <li><a class="dropdown-item text-white" href="#">Preguntas Frecuentes</a></li>
-                    </ul>
-                  </div>
-                </li>       
-              </ul> 
-              <!--Login/Sign Up-->
-              <div class="d-flex align-self-sm-end align-self-md-center align-items-center justify-content-center gap-3">
-                <a class="btn text-white f-barlow" data-bs-toggle="modal" data-bs-target="#signInModal">INICIAR SESION</a>                
-                <!--Modal Btn Sign Up-->             
-                <a type="button" class="btn  f-barlow px-3 py-1 text-white" data-bs-toggle="modal" data-bs-target="#signUpModal">REGISTRARME</a> 
-              </div>
-            </div>            
+  <header class="vh-100 rounded-5 m-3" id="home">
+    <!-- NavBar -->
+    <nav class="navContainer navbar navbar-expand-lg navbar-dark c-darkblue fixed-top">
+      <div class="container">
+        <!--Logo-->
+        <a class="navbar-brand fs-4" href="index.html"><img class="logo"
+            src="https://github.com/SagoDev/Proyecto-web-Beats-Vault-Studio/blob/main/img/Logo/BeatsVaultLogo.png?raw=true"
+            alt=""></a>
+        <!--Toggle Btn-->
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Sidebar-->
+        <div class="sidebar offcanvas text-white offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <!--Sidebar Header-->
+          <div class="offcanvas-header border-bottom text-white c-darkblue">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Opciones</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
           </div>
-        </div>
-      </nav>
-      <!--Start Modal Section-->
-        <!--Modal Sign Up-->        
-        <div class="modal "id="signUpModal" tabindex="-1">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body border rounded-3">
-                <div class="d-flex justify-content-center align-items-center">
-                  <div class="row justify-content-center">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="modal" aria-label="Close"></button>                                          
-                    </div>                    
-                    <div class="col-12 right-box">
-                      <div class="row align-items-center">
-                        <div class="header-text mb-4 f-barlow text-center">
-                           <h2>Registro</h2>
-                           <p>Por favor rellena los datos</p>
-                        </div>   
-                        <div class="input-group mb-3">
-                         <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Nombre de Usuario">
-                        </div>
-                        <div class="input-group mb-3">
-                          <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Correo Electrónico">
-                        </div>
-                        <div class="input-group mb-3">
-                          <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Contraseña">
-                        </div>
-                        <div class="input-group mb-3">
-                        <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Confirmar Contraseña">
-                        </div>
-                        <div class="input-group mb-5 d-flex justify-content-between">
-                          <div class="form-check">
-                              <input type="checkbox" class="form-check-input" id="formCheckTyC">
-                              <label for="formCheckTyC" class="form-check-label text-secondary"><small>Acepto los términos y condiciones</small></label>
-                          </div>
-                          <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="formCheckSub">
-                            <label for="formCheckSub" class="form-check-label text-secondary"><small>Recibir las ultimas noticias en mi correo.</small></label>
-                          </div>                       
-                        </div>
-                        <div class="input-group mb-3">
-                          <button class="btn btn-lg w-100 fs-6 c-darkblue text-white">Registrarme</button>
-                        </div>                                       
-                      </div>
-                    </div>
-                  </div>
+          <!--Sidebar Body-->
+          <div class="offcanvas-body text-center c-darkblue">
+            <ul class="navbar-nav d-flex justify-content-center align-items-center flex-grow-1 f-barlow">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#home">
+                  INICIO
+                </a>
+              </li>
+              <!--BeatsDropdown-->
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle border-0 text-white" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    BEATS
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark c-darkblue">
+                    <li><a class="dropdown-item text-white" href="#beats">Nuestros Beats</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Licencias</a></li>
+                  </ul>
                 </div>
-              </div>
-            </div>             
+              </li>
+              <!--Services Dropdown-->
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle border-0 text-white" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    SERVICIOS
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark c-darkblue">
+                    <li><a class="dropdown-item text-white" href="#mix&mas">Mezcla Y Mastering</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Tienda De Recursos</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Consultas Online</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!--Contact Dropdown-->
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle border-0 text-white" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    CONTACTO
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark c-darkblue text-white">
+                    <li><a class="dropdown-item text-white" href="#">Beats Vault Studio</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Preguntas Frecuentes</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <!--Login/Sign Up-->
+            <div class="d-flex align-self-sm-end align-self-md-center align-items-center justify-content-center gap-3">
+              <a class="btn text-white f-barlow" data-bs-toggle="modal" data-bs-target="#signInModal">INICIAR SESION</a>
+              <!--Modal Btn Sign Up-->
+              <a type="button" class="btn  f-barlow px-3 py-1 text-white" data-bs-toggle="modal"
+                data-bs-target="#signUpModal">REGISTRARME</a>
+            </div>
           </div>
         </div>
       </div>
-      <!--Modal Sign In-->
-      <div class="modal"id="signInModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body border rounded-3">
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="row">
-                  <div class="modal-header">                    
-                    <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>                  
-                  <div class="col-12 right-box">
-                    <div class="row align-items-center">
-                      <div class="header-text mb-4 f-barlow text-center">
-                         <h2><h2>Inicia Sesión</h2></h2>
-                         <p>Ingresa tus datos</p>
-                      </div>   
-                      <div class="input-group mb-3">
-                       <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Nombre de Usuario">
-                      </div>                      
-                      <div class="input-group mb-3">
-                        <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Contraseña">
-                      </div>                      
-                      <div class="input-group mb-5 d-flex justify-content-between">
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="formCheckTyC">
-                            <label for="formCheckTyC" class="form-check-label text-secondary"><small>Recuerdame</small></label>
-                        </div>                                             
+    </nav>
+    <!--Start Modal Section-->
+    <!--Modal Sign Up-->
+    <div class="modal " id="signUpModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body border rounded-3">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="row justify-content-center">
+                <div class="modal-header">
+                  <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                </div>
+                <div class="col-12 right-box">
+                  <div class="row align-items-center">
+                    <div class="header-text mb-4 f-barlow text-center">
+                      <h2>Registro</h2>
+                      <p>Por favor rellena los datos</p>
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control form-control-lg bg-light fs-6"
+                        placeholder="Nombre de Usuario">
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control form-control-lg bg-light fs-6"
+                        placeholder="Correo Electrónico">
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="password" class="form-control form-control-lg bg-light fs-6"
+                        placeholder="Contraseña">
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="password" class="form-control form-control-lg bg-light fs-6"
+                        placeholder="Confirmar Contraseña">
+                    </div>
+                    <div class="input-group mb-5 d-flex justify-content-between">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="formCheckTyC">
+                        <label for="formCheckTyC" class="form-check-label text-secondary"><small>Acepto los términos y
+                            condiciones</small></label>
                       </div>
-                      <div class="input-group mb-3">
-                        <button class="btn btn-lg w-100 fs-6 c-darkblue text-white">Ingresar</button>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="formCheckSub">
+                        <label for="formCheckSub" class="form-check-label text-secondary"><small>Recibir las ultimas
+                            noticias en mi correo.</small></label>
                       </div>
-                      <div class="row">
-                    <small>¿No tienes cuenta?<a href="">Crear cuenta</a></small>                                
-                      </div>                
+                    </div>
+                    <div class="input-group mb-3">
+                      <button class="btn btn-lg w-100 fs-6 c-darkblue text-white">Registrarme</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>             
-        </div>                    
+          </div>
+        </div>
       </div>
-      <!--End Modal Section-->
-      <!--Main Title-->          
-      <div class="titleContainer container d-flex justify-content-center align-items-center">
-        <div class="mt-5">
-          <div class=" topLine row">
-            <div class=" emptyLine col-1"></div>
-            <div class="line c-orange leftLine col-4"></div>
-            <div class=" emptyLine col-2"></div>
-            <div class="line c-orange rightLine col-4"></div>
-            <div class=" emptyLine col-1"></div>
-          </div>
-          <div class="mainTitle row d-flex text-center justify-content-center mt-3">
-            <div class="titlePart1 d-flex justify-content-center f-blanka text-white"> 
-              BEATS VAULT
+    </div>
+    </div>
+    <!--Modal Sign In-->
+    <div class="modal" id="signInModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body border rounded-3">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="row">
+                <div class="modal-header">
+                  <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                </div>
+                <div class="col-12 right-box">
+                  <div class="row align-items-center">
+                    <div class="header-text mb-4 f-barlow text-center">
+                      <h2>
+                        <h2>Inicia Sesión</h2>
+                      </h2>
+                      <p>Ingresa tus datos</p>
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control form-control-lg bg-light fs-6"
+                        placeholder="Nombre de Usuario">
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="password" class="form-control form-control-lg bg-light fs-6"
+                        placeholder="Contraseña">
+                    </div>
+                    <div class="input-group mb-5 d-flex justify-content-between">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="formCheckTyC">
+                        <label for="formCheckTyC"
+                          class="form-check-label text-secondary"><small>Recuerdame</small></label>
+                      </div>
+                    </div>
+                    <div class="input-group mb-3">
+                      <button class="btn btn-lg w-100 fs-6 c-darkblue text-white">Ingresar</button>
+                    </div>
+                    <div class="row">
+                      <small>¿No tienes cuenta?<a href="">Crear cuenta</a></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="studio fs-2 d-flex justify-content-center c-orange f-barlow">
-             <div>STUDIO</div> 
-            </div> 
-            <div class="slogan fs-2 f-barlow text-white mb-3">
-             ELEVA TU MUSICA
-            </div>
           </div>
-          <div class="bottomLine row">
+        </div>
+      </div>
+    </div>
+    <!--End Modal Section-->
+    <!--Main Title-->
+    <div class="titleContainer container d-flex justify-content-center align-items-center">
+      <div class="mt-5">
+        <div class=" topLine row">
+          <div class=" emptyLine col-1"></div>
+          <div class="line c-orange leftLine col-4"></div>
+          <div class=" emptyLine col-2"></div>
+          <div class="line c-orange rightLine col-4"></div>
+          <div class=" emptyLine col-1"></div>
+        </div>
+        <div class="mainTitle row d-flex text-center justify-content-center mt-3">
+          <div class="titlePart1 d-flex justify-content-center f-blanka text-white">
+            BEATS VAULT
+          </div>
+          <div class="studio fs-2 d-flex justify-content-center c-orange f-barlow">
+            <div>STUDIO</div>
+          </div>
+          <div class="slogan fs-2 f-barlow text-white mb-3">
+            ELEVA TU MUSICA
+          </div>
+        </div>
+        <div class="bottomLine row">
           <div class=" emptyLine col-1"></div>
           <div class="line c-orange centerLine col-10"></div>
           <div class=" emptyLine col-1"></div>
-          </div>  
         </div>
-      </div>         
-    </header>
-    <main>
-      <div class="">
-        <!--For You Section-->
-      <div class="contentSection forYou c-darkblue rounded-5 m-3 row text-center text-white d-flex justify-content align-items-center">
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <!--For You Section-->
+      <div
+        class="contentSection forYou c-darkblue rounded-5 m-3 row text-center text-white d-flex justify-content-center align-items-center">
+        <div class="divisorLine row">
+          <div class=" emptyLine col-1"></div>
+          <div class="line c-orange centerLine col-10"></div>
+          <div class=" emptyLine col-1"></div>
+        </div>
         <div class="textSection my-5">
           <div class="titleSection fs-5 f-spartan mb-5">
             <h1>¿QUÉ PODEMOS HACER POR TI?</h1>
           </div>
-          <div class="phraseSection f-barlow  fs-5"> 
+          <div class="phraseSection f-barlow  fs-5">
             <p>TENEMOS EL EQUIPO DE MÚSICOS Y TÉCNICOS PERFECTO PARA TÍ.</p>
-            <p>NOS ENCARGAMOS DE TODO: <strong class="text-orange">ARREGLO Y BASE INSTRUMENTAL, AFINACIÓN DE VOZ, MEZCLA Y MASTERING</strong>.</p>
-            <p>NUESTRO EQUIPO DE PROFESIONALES LLEVAN AÑOS TRABAJANDO EN PRODUCCIONES, GIRAS CON ARTISTAS INDEPENDIENTES Y SELLOS MULTINACIONALES DE TODO EL MUNDO.</p>
+            <p>NOS ENCARGAMOS DE TODO: <strong class="text-orange">ARREGLO Y BASE INSTRUMENTAL, AFINACIÓN DE VOZ, MEZCLA
+                Y
+                MASTERING</strong>.</p>
+            <p>NUESTRO EQUIPO DE PROFESIONALES LLEVAN AÑOS TRABAJANDO EN PRODUCCIONES, GIRAS CON ARTISTAS INDEPENDIENTES
+              Y
+              SELLOS MULTINACIONALES DE TODO EL MUNDO.</p>
             <p><strong class="text-orange">TE AYUDAMOS A DAR EL SALTO PROFESIONAL</strong>.</p>
-          </div>                      
-        </div>                    
+          </div>
+        </div>
       </div>
       <!--Process Section-->
       <div class="contentSection process c-orange rounded-5 m-3 p-3 text-center text-white">
@@ -235,13 +270,14 @@
             <h1>NUESTRO PROCESO</h1>
           </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-4 g-4 py-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-5">
           <div class="col">
             <div class="card shadow text-white">
               <i class="bi bi-wechat"></i>
               <div class="card-body">
-                <h5 class="card-title">Elaborar Presupuesto</h5>
-                <p class="card-text">Cuentanos que tienes en mente. <strong>Prepararemos una propuesta ideal para ti</strong>.</p>
+                <h5 class="card-title">1 - Elaborar Presupuesto</h5>
+                <p class="card-text">Cuentanos que tienes en mente. <strong>Prepararemos una propuesta ideal para
+                    ti</strong>.</p>
               </div>
             </div>
           </div>
@@ -249,8 +285,8 @@
             <div class="card shadow text-white">
               <i class="bi bi-music-note-beamed"></i>
               <div class="card-body">
-                <h5 class="card-title">Creación de Instrumental</h5>
-                <p class="card-text">Crearemos la instrumental. Recibirás una <strong>premix</strong>. Aqui podrás solicitar modificaciones.</p>
+                <h5 class="card-title">2 - Creación de Instrumental</h5>
+                <p class="card-text">Recibirás una <strong>premix</strong>. Solicitá modificaciones.</p>
               </div>
             </div>
           </div>
@@ -258,8 +294,9 @@
             <div class="card shadow text-white">
               <i class="bi bi-mic-fill"></i>
               <div class="card-body">
-                <h5 class="card-title">Grabación de Voz</h5>
-                <p class="card-text"><strong>Graba tu voz</strong>. Puedes optar por hacerlo con tu home studio o en nuestro estudio de grabación</p>
+                <h5 class="card-title">3 - Grabación de Voz</h5>
+                <p class="card-text"><strong>Graba tu voz</strong>. Puedes optar por hacerlo tu o en nuestro estudio de
+                  grabación</p>
               </div>
             </div>
           </div>
@@ -267,36 +304,42 @@
             <div class="card shadow text-white">
               <i class="bi bi-record-circle-fill"></i>
               <div class="card-body">
-                <h5 class="card-title">Finalizar Producción</h5>
-                <p class="card-text"><strong>Afinamos</strong> y editamos tu voz<strong>. Mezclamos y Masterimos.</strong>Y tu próximo hit esta listo!</p>
+                <h5 class="card-title">4 - Finalizar Producción</h5>
+                <p class="card-text"><strong>Afinamos</strong> y editamos tu voz<strong>. Mezclamos y
+                    Masterimos.</strong>Y tu próximo hit esta listo!</p>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!--Mark for beats section on navBar-->
-      <span id="beats"></span>                       
+      <span id="beats"></span>
       <!--Beats Section-->
+      <div class="divisorLine row">
+        <div class=" emptyLine col-1"></div>
+        <div class="line c-orange centerLine col-10"></div>
+        <div class=" emptyLine col-1"></div>
+      </div>
       <div class="contentSection beats c-darkblue rounded-5 m-3 row d-flex justify-content-center align-items-center">
         <!--Text Container-->
-        <div class="textSection d-flex justify-content-center flex-column gap-4 text-white row col-sm-12 col-lg-6">
+        <div class="textSection text-white row col-sm-12 col-lg-6 d-flex justify-content-center">
           <!--Hashtag-->
-          <div class="hashtagText text-orange f-barlow col-sm-12">
+          <div class="hashtagText text-center text-lg-start text-orange f-barlow col-sm-12 fs-5">
             #MADEBYBVS
           </div>
           <!--Phrase-->
-          <div class="mainPhrase row w-100 col-sm-12">
+          <div class="mainPhrase text-center text-lg-start row w-100 col-sm-12">
             <div class="phrasePart1 fs-1">
               <span class="f-spartan mb-3">
                 TENEMOS LO QUE
-              </span>  
+              </span>
               <span class="phrasePart2 fs-1 col-6 f-blanka">
                 ESTAS BUSCANDO
-              </span> 
-            </div>              
+              </span>
+            </div>
             <div class="phrasePart3 col-12 f-barlow text-orange fw-bold">
               HAGAMOS HISTORIA JUNTOS.
-            </div>                          
+            </div>
           </div>
           <!--Search Input-->
           <div class="col-sm-12 col-lg-8 mt-3 d-sm-flex d-lg-block justify-content-sm-center mt-5">
@@ -306,79 +349,135 @@
             </form>
           </div>
         </div>
-        <!--Gallery Contaoiner-->
-        <div class="gallerySection d-sm-flex d-lg-block justify-content-center align-items-center col-sm-12 col-lg-6 my-5">
+        <!--Gallery Container-->
+        <div
+          class="gallerySection d-sm-flex d-lg-block justify-content-center align-items-center col-sm-12 col-lg-6 my-5">
           <!--View in small size-->
           <section class="smSec d-md-none flex-nowrap overflow-scroll">
             <div class="smGenre d-md-flex">
-              <img src="https://images.pexels.com/photos/16741044/pexels-photo-16741044/free-photo-of-moda-gente-mujer-arte.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="reggaeton" class="img-fluid">
+              <img
+                src="https://images.pexels.com/photos/16741044/pexels-photo-16741044/free-photo-of-moda-gente-mujer-arte.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="reggaeton" class="img-fluid">
             </div>
-            <div  class="smGenre d-md-flex">
-              <img src="https://images.pexels.com/photos/2067689/pexels-photo-2067689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="rap">
-            </div>              
-            <div  class="smGenre d-md-flex">
-              <img src="https://images.pexels.com/photos/16844558/pexels-photo-16844558/free-photo-of-musica-musico-concierto-instrumento-musical.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="rock">
+            <div class="smGenre d-md-flex">
+              <img
+                src="https://images.pexels.com/photos/2067689/pexels-photo-2067689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="rap">
             </div>
-            <div  class="smGenre d-md-flex">
-              <img src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="pop">
+            <div class="smGenre d-md-flex">
+              <img
+                src="https://images.pexels.com/photos/16844558/pexels-photo-16844558/free-photo-of-musica-musico-concierto-instrumento-musical.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="rock">
             </div>
-            <div  class="smGenre d-md-flex">
-              <img src="https://images.pexels.com/photos/13872120/pexels-photo-13872120.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="electronic" class="card-img img-fluid">
-            </div> 
+            <div class="smGenre d-md-flex">
+              <img
+                src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="pop">
+            </div>
+            <div class="smGenre d-md-flex">
+              <img
+                src="https://images.pexels.com/photos/13872120/pexels-photo-13872120.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="electronic" class="card-img img-fluid">
+            </div>
           </section>
           <!--View in medium size-->
           <section class="mdSec d-md-flex d-lg-none">
             <div class="mdGenre d-md-flex">
-              <img src="https://images.pexels.com/photos/16741044/pexels-photo-16741044/free-photo-of-moda-gente-mujer-arte.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="reggaeton">
+              <img
+                src="https://images.pexels.com/photos/16741044/pexels-photo-16741044/free-photo-of-moda-gente-mujer-arte.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="reggaeton">
             </div>
-            <div  class="mdGenre d-md-flex">
-              <img src="https://images.pexels.com/photos/2067689/pexels-photo-2067689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="rap">
-            </div>              
-            <div  class="mdGenre d-md-flex">
-              <img src="https://images.pexels.com/photos/16844558/pexels-photo-16844558/free-photo-of-musica-musico-concierto-instrumento-musical.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="rock">
+            <div class="mdGenre d-md-flex">
+              <img
+                src="https://images.pexels.com/photos/2067689/pexels-photo-2067689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="rap">
             </div>
-            <div  class="mdGenre d-md-flex">
-              <img src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="pop">
+            <div class="mdGenre d-md-flex">
+              <img
+                src="https://images.pexels.com/photos/16844558/pexels-photo-16844558/free-photo-of-musica-musico-concierto-instrumento-musical.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="rock">
             </div>
-            <div  class="mdGenre d-md-flex">
-              <img src="https://images.pexels.com/photos/13872120/pexels-photo-13872120.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="electronic" class="card-img img-fluid">
-            </div>              
+            <div class="mdGenre d-md-flex">
+              <img
+                src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="pop">
+            </div>
+            <div class="mdGenre d-md-flex">
+              <img
+                src="https://images.pexels.com/photos/13872120/pexels-photo-13872120.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="electronic" class="card-img img-fluid">
+            </div>
           </section>
           <!--View in large size-->
           <section class="lgSec d-lg-flex">
             <div class="lgGenre d-lg-flex">
-              <img src="https://images.pexels.com/photos/16741044/pexels-photo-16741044/free-photo-of-moda-gente-mujer-arte.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="reggaeton">
+              <img
+                src="https://images.pexels.com/photos/16741044/pexels-photo-16741044/free-photo-of-moda-gente-mujer-arte.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="reggaeton">
             </div>
-            <div  class="lgGenre d-lg-flex">
-              <img src="https://images.pexels.com/photos/2067689/pexels-photo-2067689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="rap">
-            </div>              
-            <div  class="lgGenre d-lg-flex">
-              <img src="https://images.pexels.com/photos/16844558/pexels-photo-16844558/free-photo-of-musica-musico-concierto-instrumento-musical.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="rock">
+            <div class="lgGenre d-lg-flex">
+              <img
+                src="https://images.pexels.com/photos/2067689/pexels-photo-2067689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="rap">
             </div>
-            <div  class="lgGenre d-lg-flex">
-              <img src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="pop">
+            <div class="lgGenre d-lg-flex">
+              <img
+                src="https://images.pexels.com/photos/16844558/pexels-photo-16844558/free-photo-of-musica-musico-concierto-instrumento-musical.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="rock">
             </div>
-            <div  class="lgGenre d-lg-flex">
-              <img src="https://images.pexels.com/photos/13872120/pexels-photo-13872120.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="electronic" class="card-img">
-            </div>              
-          </section>                                               
+            <div class="lgGenre d-lg-flex">
+              <img
+                src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="pop">
+            </div>
+            <div class="lgGenre d-lg-flex">
+              <img
+                src="https://images.pexels.com/photos/13872120/pexels-photo-13872120.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="electronic" class="card-img">
+            </div>
+          </section>
         </div>
-         <!--Mark for beats section on navBar-->
-         <span id="mix&mas"></span>
-      </div> 
-      <!--Mix and Master Section-->                                 
-      <div class="contentSection mixMas row d-flex justify-content-center align-items-center"> 
-        <div class="titleSection col-sm-12 text-white f-barlow fs-2">
-          <p>MIXING Y MASTERING <span class="text-orange">PROFESIONAL</span></p>
-        </div> 
-        <!--<div class="maxSection col-12 d-flex justify-content-center align-items-center">
-          <h5 class="card-title">MIXING</h5>
-          <p class="card-text">Nuestro servicio de mezcla de canciones está diseñado para llevar tu música al siguiente nivel. Nuestro equipo de ingenieros de sonido altamente capacitados trabajará en tus pistas para lograr una calidad de audio excepcional y una mezcla impecable.</p>            
-          </div>            
-        <div class="masSection col-12 d-flex justify-content-center align-items-center">
-          <h5 class="card-title">MASTERING</h5>
-              <p class="card-text">Tu música merece brillar con la mejor calidad y sonido posible. Nuestro servicio de masterización de canciones te ofrece la clave para lograrlo. Nuestro equipo de ingenieros de masterización altamente calificados perfeccionará tus pistas, garantizando que suenen impecables en cualquier sistema de reproducción.</p>            
-        </div>-->          
+        <!--Mark for beats section on navBar-->
+        <span id="mix&mas"></span>
+      </div>
+      <!--Mix and Master Section-->
+      <div class="divisorLine row">
+        <div class=" emptyLine col-1"></div>
+        <div class="line c-orange centerLine col-10"></div>
+        <div class=" emptyLine col-1"></div>
+      </div>
+      <div class="contentSection mixMas row d-flex justify-content-center align-items-center mt-5">
+        <div class="titleSection col-sm-12 text-center text-white f-barlow fs-1">
+          <p>MIXING & MASTERING <span class="text-orange">PROFESIONAL</span></p>
+        </div>
+        <div class="maxSection row col-sm-12 text-white p-3 mt-3 f-barlow d-flex justify-content-center">
+          <div class="row col-12 col-md-8 text-center text-md-start">
+            <h5 class="col-12 fs-3">MIXING</h5>
+            <div class="col-12 fs-5">Nuestro servicio de mezcla de canciones está diseñado para llevar tu música al
+              siguiente nivel. Nuestro equipo de ingenieros de sonido altamente capacitados trabajará en tus pistas para
+              lograr una calidad de audio excepcional y una mezcla impecable.</div>
+          </div>
+          <div class="img-cont col-12 col-md-4 d-flex justify-content-center align-items-center mt-2">
+            <img
+              src="https://images.pexels.com/photos/3469712/pexels-photo-3469712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="img-fluid">
+          </div>
+        </div>
+        <div class="masSection row col-sm-12 text-white text-center text-md-start p-3 f-barlow d-flex justify-content-center">
+          <div class="row col-12 col-md-8">
+            <h5 class="col-12 fs-3">MASTERING</h5>
+            <div class="col-12 fs-5">Tu música merece brillar con la mejor calidad y sonido posible. Nuestro servicio de
+              masterización de canciones te ofrece la clave para lograrlo. Nuestro equipo de ingenieros de masterización
+              altamente calificados perfeccionará tus pistas, garantizando que suenen impecables en cualquier sistema de
+              reproducción.
+            </div>
+          </div>
+          <div class="img-cont col-12 col-md-4 d-flex justify-content-center align-items-center mt-2">
+            <img
+              src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="img-fluid">
+          </div>
+        </div>
       </div>
       <!--About Section-->
       <div class="contentSection about row d-flex justify-content-center align-items-center">
@@ -402,12 +501,15 @@
           </div>
         </div>-->
       </div>
-      </div>
-    </main>
-    <footer>        
-    </footer>
-    <!--Bootstrap script-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
-    <!--Personal Script-->
+    </div>
+  </main>
+  <footer>
+  </footer>
+  <!--Bootstrap script-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!--Personal Script-->
 </body>
+
 </html>

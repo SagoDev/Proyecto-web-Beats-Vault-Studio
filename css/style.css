@@ -6,12 +6,13 @@ header {
     background-size: cover;
 }
 
+
 /*Setting View and Font sizes*/
 .navContainer {
     height: 10vh;
 }
 
-.titleContainer{
+.titleContainer {
     height: 90vh;
 }
 
@@ -60,6 +61,15 @@ section {
     background-color: rgb(20, 15, 42);
     padding: 20px;
 }
+
+/*About Section*/
+
+.about p {
+    text-align: justify;
+    font-family: 'Barlow';
+    font-size: 1.25rem;
+}
+
 
 /*Gallery View md start*/
 .smSec {

@@ -14,8 +14,9 @@
   <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/league-spartan" rel="stylesheet">
   <!--Personal link-->
-  <link rel="stylesheet" href="css/style.css">
-  <title>Proyecto web Beats Vault Studio</title>
+  <link rel="stylesheet" href="css/indexStyle.css">
+  <link rel="stylesheet" href="css/classesStyle.css">
+  <title>Beats Vault Studio</title>
 </head>
 
 <body class="c-darkblue">
@@ -92,7 +93,7 @@
             </ul>
             <!--Login/Sign Up-->
             <div class="d-flex align-self-sm-end align-self-md-center align-items-center justify-content-center gap-3">
-              <a class="btn text-white f-barlow" data-bs-toggle="modal" data-bs-target="#signInModal">INICIAR SESION</a>
+              <a class="btn text-white f-barlow" href="/pages/login.html">INICIAR SESION</a>
               <!--Modal Btn Sign Up-->
               <a type="button" class="btn  f-barlow px-3 py-1 text-white" data-bs-toggle="modal"
                 data-bs-target="#signUpModal">REGISTRARME</a>
@@ -100,114 +101,7 @@
           </div>
         </div>
       </div>
-    </nav>
-    <!--Start Modal Section-->
-    <!--Modal Sign Up-->
-    <div class="modal " id="signUpModal" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body border rounded-3">
-            <div class="d-flex justify-content-center align-items-center">
-              <div class="row justify-content-center">
-                <div class="modal-header">
-                  <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-                </div>
-                <div class="col-12 right-box">
-                  <div class="row align-items-center">
-                    <div class="header-text mb-4 f-barlow text-center">
-                      <h2>Registro</h2>
-                      <p>Por favor rellena los datos</p>
-                    </div>
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control form-control-lg bg-light fs-6"
-                        placeholder="Nombre de Usuario">
-                    </div>
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control form-control-lg bg-light fs-6"
-                        placeholder="Correo Electrónico">
-                    </div>
-                    <div class="input-group mb-3">
-                      <input type="password" class="form-control form-control-lg bg-light fs-6"
-                        placeholder="Contraseña">
-                    </div>
-                    <div class="input-group mb-3">
-                      <input type="password" class="form-control form-control-lg bg-light fs-6"
-                        placeholder="Confirmar Contraseña">
-                    </div>
-                    <div class="input-group mb-5 d-flex justify-content-between">
-                      <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="formCheckTyC">
-                        <label for="formCheckTyC" class="form-check-label text-secondary"><small>Acepto los términos y
-                            condiciones</small></label>
-                      </div>
-                      <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="formCheckSub">
-                        <label for="formCheckSub" class="form-check-label text-secondary"><small>Recibir las ultimas
-                            noticias en mi correo.</small></label>
-                      </div>
-                    </div>
-                    <div class="input-group mb-3">
-                      <button class="btn btn-lg w-100 fs-6 c-darkblue text-white">Registrarme</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <!--Modal Sign In-->
-    <div class="modal" id="signInModal" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body border rounded-3">
-            <div class="d-flex justify-content-center align-items-center">
-              <div class="row">
-                <div class="modal-header">
-                  <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-                </div>
-                <div class="col-12 right-box">
-                  <div class="row align-items-center">
-                    <div class="header-text mb-4 f-barlow text-center">
-                      <h2>
-                        <h2>Inicia Sesión</h2>
-                      </h2>
-                      <p>Ingresa tus datos</p>
-                    </div>
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control form-control-lg bg-light fs-6"
-                        placeholder="Nombre de Usuario">
-                    </div>
-                    <div class="input-group mb-3">
-                      <input type="password" class="form-control form-control-lg bg-light fs-6"
-                        placeholder="Contraseña">
-                    </div>
-                    <div class="input-group mb-5 d-flex justify-content-between">
-                      <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="formCheckTyC">
-                        <label for="formCheckTyC"
-                          class="form-check-label text-secondary"><small>Recuerdame</small></label>
-                      </div>
-                    </div>
-                    <div class="input-group mb-3">
-                      <button class="btn btn-lg w-100 fs-6 c-darkblue text-white">Ingresar</button>
-                    </div>
-                    <div class="row">
-                      <small>¿No tienes cuenta?<a href="">Crear cuenta</a></small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--End Modal Section-->
+    </nav>    
     <!--Main Title-->
     <div class="titleContainer container d-flex justify-content-center align-items-center">
       <div class="mt-5">
@@ -248,7 +142,7 @@
       <div class="contentSection about row d-flex justify-content-center align-items-center my-5 text-white">
         <div class="col-sm-12 col-md-8 row">
           <div class="col-12">
-            <h1 class="f-spartan my-4">¿Qué es <span class="text-orange">Beats Vault Studio Estudio</span>?</h1>
+            <h1 class="f-spartan my-4">¿Qué es <span class="text-orange">Beats Vault Studio</span>?</h1>
             <p>En <span class="text-orange fs-3 f-blanka">BVS</span>, no simplemente creamos
               música, forjamos experiencias sonoras inolvidables. Somos más que una productora musical; somos
               arquitectos de melodías, artesanos del sonido y compañeros de viaje en el emocionante trayecto musical.
@@ -305,10 +199,10 @@
       <div class="contentSection process c-orange rounded-5 m-3 p-3 text-center text-white">
         <div class="d-flex justify-content-center align-items-center">
           <div class="titleSection mt-5 fs-5 text-darkblue f-spartan">
-            <h1>NUESTRO PROCESO</h1>
+            <h1><strong>NUESTRO PROCESO</strong></h1>
           </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-5">
+        <div class="row row-cols-1 row-cols-md-2 row-t-lg-4 g-4 py-5">
           <div class="col">
             <div class="card shadow text-white">
               <i class="bi bi-wechat"></i>

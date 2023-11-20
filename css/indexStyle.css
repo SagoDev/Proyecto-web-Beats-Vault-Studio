@@ -6,7 +6,6 @@ header {
     background-size: cover;
 }
 
-
 /*Setting View and Font sizes*/
 .navContainer {
     height: 10vh;
@@ -143,38 +142,4 @@ section {
 
 ::placeholder {
     font-size: 16px;
-}
-
-
-/*Customized classes for fonts, backgrounds and colors*/
-.f-barlow {
-    font-family: 'Barlow'
-}
-
-.f-blanka {
-    font-family: 'Blanka'
-}
-
-.f-montserrat {
-    font-family: 'Montserrat'
-}
-
-.f-spartan {
-    font-family: 'League Spartan'
-}
-
-.c-darkblue {
-    background-color: rgb(20, 15, 42);
-}
-
-.c-orange {
-    background-color: rgb(210, 101, 9);
-}
-
-.text-darkblue {
-    color: rgb(20, 15, 42);
-}
-
-.text-orange {
-    color: rgb(210, 101, 9);
 }

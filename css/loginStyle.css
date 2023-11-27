@@ -1,0 +1,33 @@
+body {
+    background-image: url('https://github.com/SagoDev/Proyecto-web-Beats-Vault-Studio/blob/main/img/image1.png?raw=true');
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input:focus,
+select:focus,
+select,
+input.form-control:focus {
+
+    outline: none !important;
+
+    outline-width: 0 !important;
+
+    box-shadow: none;
+
+    -moz-box-shadow: none;
+
+    -webkit-box-shadow: none;
+
+}
+
+.btnLogin {
+    background-color: rgb(20, 15, 42) !important;
+    border: none;
+}
+
+.login{
+    backdrop-filter: blur(0.4rem);
+}

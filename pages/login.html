@@ -7,7 +7,6 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!--Fonts Links-->
     <link href="https://fonts.cdnfonts.com/css/blanka" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/barlow" rel="stylesheet">
@@ -19,24 +18,40 @@
     <title>Login</title>
 </head>
 
-<body class="c-darkblue">
-
-    <section>
-        <div class="row">
-            <div class="col-lg-7">
-                <img src="https://images.pexels.com/photos/8105748/pexels-photo-8105748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  class="img-fluid">
+<body>
+    <div class="container text-white vh-100 d-flex justify-content-center align-items-center f-barlow">
+        <div class="row justify-content-center align-items-center login p-5 rounded-5 shadow">
+            <div class="col-md-6">
+                <div class="header-field text-center">
+                    <h2 class="f-blanka">INICIA SESION</h2>
+                    <p class="">Entra y explora todo lo que tenemos para ti.</p>
+                </div>
+                <div class="register-field text-center my-3">
+                    <span>¿No tienes cuenta? <a href="">Registrarme</a></span>
+                </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <form class="needs-validation" novalidate>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control  rounded-5" placeholder="Usuario" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control rounded-5" placeholder="Contraseña" required>
+                    </div>
+                    <div class="input-group mb-3 gap-2">
+                        <input type="checkbox" class="form-check-input  m" id="remeberCheck" required>
+                        <label for="remeberCheck" class="form-check-label">Recuerdame</label>
+                    </div>
+                    <div class="input-group justify-content-center">
+                        <input type="submit" class="btn btn-primary btnLogin w-75 rounded-5" value="Entrar">
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
-
-    <!--Bootstrap script-->
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <!--Personal Script-->
 </body>
 
 </html>

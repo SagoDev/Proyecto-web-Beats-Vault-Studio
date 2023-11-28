@@ -24,10 +24,12 @@ input.form-control:focus {
 }
 
 .btnLogin {
-    background-color: rgb(20, 15, 42) !important;
+    background-color: rgb(31, 23, 66) !important;
     border: none;
 }
 
-.login{
-    backdrop-filter: blur(0.4rem);
+.login {
+    background: rgba(31, 23, 66, 0.34);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }

@@ -19,36 +19,48 @@
 </head>
 
 <body>
-    <div class="container text-white vh-100 d-flex justify-content-center align-items-center f-barlow">
-        <div class="row justify-content-center align-items-center login p-5 rounded-5 shadow">
-            <div class="col-md-6">
-                <div class="header-field text-center">
-                    <h2 class="f-blanka">INICIA SESION</h2>
-                    <p class="">Entra y explora todo lo que tenemos para ti.</p>
+    <main>
+        <div class="container text-white vh-100 d-flex justify-content-center align-items-center f-barlow p-5">
+            <div class="row justify-content-center align-items-center login p-3 rounded-5 shadow">
+                <div class="col-md-6">
+                    <div
+                        class="register-field d-flex justify-content-center flex-column align-items-center text-center my-3">
+                        <div class="text-field text-center">
+                            <h2 class="f-blanka text-orange">INICIA SESION</h2>
+                            <p class="">Entra y explora todo lo que tenemos para ti.</p>
+                        </div>
+                        <span class="d-none d-md-block">¿No tienes cuenta? <a class="text-orange"
+                                href="/pages/register.html">Registrarme</a></span>
+                    </div>
                 </div>
-                <div class="register-field text-center my-3">
-                    <span>¿No tienes cuenta? <a href="">Registrarme</a></span>
+                <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">
+                    <div class="header-field text-center">
+                        <h3 class="">BIENVENIDO SOCIO!</h3>
+                        <p class="">Es bueno verte de nuevo.</p>
+                    </div>
+                    <form class="needs-validation mb-3" novalidate>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control text-center rounded-5" placeholder="Usuario"
+                                required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control text-center rounded-5" placeholder="Contraseña"
+                                required>
+                        </div>
+                        <div class="input-group mb-3 gap-2 d-flex justify-content-center">
+                            <input type="checkbox" class="form-check-input" id="remeberCheck" required>
+                            <label for="remeberCheck" class="form-check-label">Recuerdame</label>
+                        </div>
+                        <div class="input-group justify-content-center">
+                            <input type="submit" class="btn btn-primary btnLogin w-75 rounded-5" value="Entrar">
+                        </div>
+                    </form>
+                    <span class="d-block d-md-none">¿No tienes cuenta? <a class="text-orange"
+                            href="/pages/register.html">Registrarme</a></span>
                 </div>
-            </div>
-            <div class="col-md-6 d-flex justify-content-center align-items-center">
-                <form class="needs-validation" novalidate>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control  rounded-5" placeholder="Usuario" required>
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="password" class="form-control rounded-5" placeholder="Contraseña" required>
-                    </div>
-                    <div class="input-group mb-3 gap-2">
-                        <input type="checkbox" class="form-check-input  m" id="remeberCheck" required>
-                        <label for="remeberCheck" class="form-check-label">Recuerdame</label>
-                    </div>
-                    <div class="input-group justify-content-center">
-                        <input type="submit" class="btn btn-primary btnLogin w-75 rounded-5" value="Entrar">
-                    </div>
-                </form>
             </div>
         </div>
-    </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

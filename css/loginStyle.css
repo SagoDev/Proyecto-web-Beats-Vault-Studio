@@ -6,23 +6,6 @@ body {
     background-size: cover;
 }
 
-input:focus,
-select:focus,
-select,
-input.form-control:focus {
-
-    outline: none !important;
-
-    outline-width: 0 !important;
-
-    box-shadow: none;
-
-    -moz-box-shadow: none;
-
-    -webkit-box-shadow: none;
-
-}
-
 .btnLogin {
     background-color: rgb(31, 23, 66) !important;
     border: none;

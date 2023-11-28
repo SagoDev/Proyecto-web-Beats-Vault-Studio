@@ -1,0 +1,23 @@
+body {
+    background-image: url('https://github.com/SagoDev/Proyecto-web-Beats-Vault-Studio/blob/main/img/image1.png?raw=true');
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-register {
+    background-color: rgb(31, 23, 66) !important;
+    border: none;
+}
+
+.register {
+    background: rgba(31, 23, 66, 0.34);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.bi {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}

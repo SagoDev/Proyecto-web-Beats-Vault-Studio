@@ -12,13 +12,69 @@
     <link href="https://fonts.cdnfonts.com/css/barlow" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/league-spartan" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <!--Personal link-->
     <link rel="stylesheet" href="/css/classesStyle.css">
+    <link rel="stylesheet" href="/css/registerStyle.css">
     <title>Register</title>
 </head>
 
 <body>
-   
+    <main>
+        <div class="container text-white vh-100 d-flex justify-content-center align-items-center f-barlow p-5">
+            <div class="row justify-content-center align-items-center register p-3 rounded-5 shadow c-darkblue">
+                <div class="order-2 order-md-1 col-md-6 d-flex justify-content-center align-items-center flex-column">
+                    <div class="header-field text-center">
+                        <p class="">INGRESA TUS DATOS</p>
+                    </div>
+                    <form class="needs-validation mb-3" novalidate>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control text-center rounded-5" placeholder="Usuario"
+                                required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control text-center rounded-5"
+                                placeholder="Correo Electrónico" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control text-center rounded-5" placeholder="Contraseña"
+                                required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control text-center rounded-5"
+                                placeholder="Repetir Contraseña" required>
+                        </div>
+                        <div class="input-group justify-content-center">
+                            <input type="submit" class="btn btn-primary btn-register w-75 rounded-5" value="Registrar">
+                        </div>
+                    </form>
+                    <span class="d-block d-md-none">¿Ya tienes cuenta? <a class="text-orange"
+                            href="/pages/login.html">Iniciar Sesión</a></span>
+                </div>
+                <div class="order-1 order-md-2 col-md-6">
+                    <div class="register-field text-center">
+                        <div class="text-field">
+                            <div class="main-text-field d-flex justify-content-center align-items-center flex-column">
+                                <h2 class="f-blanka text-orange fs-1 mb-4">REGISTRO</h2>
+                                <p>REGISTRARME CON:</p>
+                            </div>
+                            <div class="social-media-field d-flex justify-content-center align-items-center gap-3 fs-3">
+                                <a
+                                    href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Des&followup=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Des&hl=es&ifkv=ASKXGp2a4X507_GGFSf7I0Zp2YvVp3wGActaYo2dPNW2KlspYUIihsCEEzuaKKad1yI8dTm8iHtczQ&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1710526505%3A1701188928705827&theme=glif"><i
+                                        class="bi bi-google"></i></a>
+                                <a href="https://www.facebook.com/?locale=es_LA"><i class="bi bi-facebook"></i></a>
+                                <a href="https://twitter.com/?lang=es"><i class="bi bi-twitter-x"></i></a>
+                                <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                            </div>
+                            <p class="my-3">Registrate para disfrutar de todos nuestros beneficios.</p>
+                        </div>
+                        <span class="d-none d-md-block">¿Ya tienes cuenta? <a class="text-orange"
+                                href="/pages/login.html">Iniciar Sesión</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

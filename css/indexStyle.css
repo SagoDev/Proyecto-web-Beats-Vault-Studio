@@ -6,6 +6,11 @@ header {
     background-size: cover;
 }
 
+.btnSearch {
+    background-color: rgb(210, 101, 9) !important;
+    border: none;
+}
+
 /*Setting View and Font sizes*/
 .navContainer {
     height: 10vh;

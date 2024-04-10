@@ -6,8 +6,7 @@
 
 ## Descripción 📑
 
-Este proyecto tiene como finalidad crear un sitio web para una productora musical ficticia que realiza ventas de licencias de beats, servicios de mixing y mastering entre otros, la nombré Beats Vault Studio. El foco principal estará en el desarrollo mediante HTML, CSS y el  framework bootstrap. Adicional a eso pienso desarrollar algunas funcionalidades de compra con JavaScript.
-
+Este proyecto tiene como finalidad crear un sitio web para una productora musical ficticia que realiza ventas de licencias de beats, servicios de mixing y mastering entre otros, la nombré Beats Vault Studio. El foco principal estará en el desarrollo mediante HTML, CSS y el  framework bootstrap.
 ## ¿Qué he aprendido en este proyecto? 🙇🏻 
 
 Proximamente daré feedback..

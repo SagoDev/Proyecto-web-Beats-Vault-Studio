@@ -16,3 +16,7 @@ body {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
 }
+
+.logo {
+    height: 50px;
+}

@@ -1,10 +1,11 @@
 body {
+    width: 100vw;
+    height: 100vh;
     background-image: url('https://raw.githubusercontent.com/SagoDev/Proyecto-web-Beats-Vault-Studio/refs/heads/main/img/image1.webp');
     background-blend-mode: multiply;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
 }
 
 .btn-register {
